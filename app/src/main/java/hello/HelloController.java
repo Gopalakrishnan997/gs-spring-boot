@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloController {
     
     @RequestMapping("/")
-    public String index() {
+    public Int index() {
          
     	 YearMonth currentYearMonth = YearMonth.now();
     	    System.out.printf("Days in month year %s: No of days: %s \n",
