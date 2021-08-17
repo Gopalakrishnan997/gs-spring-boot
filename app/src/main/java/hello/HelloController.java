@@ -12,16 +12,14 @@ public class HelloController {
 public  String CreditCardDetails() {
 
    	 YearMonth currentYearMonth = YearMonth.now();
-   	    System.out.printf("Days in month year %s: No of days: %s \n",
-   	        currentYearMonth, currentYearMonth.lengthOfMonth());
+   	   
    	   
    	    YearMonth creditCardExpiry = YearMonth.of(2078, Month.FEBRUARY);
-   	    System.out.printf("Your credit card expires on %s: No of days: %s \n",
-   	        creditCardExpiry, creditCardExpiry.lengthOfMonth());
-   	 String monthyear = "Days in month year:"+ currentYearMonth;
-   	 String noofdays = "No of days:"+currentYearMonth.lengthOfMonth();
-   	 String cardexpires = "Your credit card expires on:"+ creditCardExpiry;
-   	 String expiresdays = "No of days:"+creditCardExpiry.lengthOfMonth();
+   	    
+   	 String monthyear = "Days in month year:    "+ currentYearMonth;
+   	 String noofdays = "No of days:   "+currentYearMonth.lengthOfMonth();
+   	 String cardexpires = "Your credit card expires on:    "+ creditCardExpiry;
+   	 String expiresdays = "No of days:    "+creditCardExpiry.lengthOfMonth();
    	   return monthyear+noofdays+cardexpires+expiresdays;
 	}  
 }
