@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloController {
     
     @RequestMapping("/")
-  	public  YearMonth Creditdetails() {
+public  void CreditCardDetails() {
 
    	 YearMonth currentYearMonth = YearMonth.now();
    	    System.out.printf("Days in month year %s: No of days: %s \n",
@@ -17,7 +17,8 @@ public class HelloController {
    	    YearMonth creditCardExpiry = YearMonth.of(2078, Month.FEBRUARY);
    	    System.out.printf("Your credit card expires on %s: No of days: %s \n",
    	        creditCardExpiry, creditCardExpiry.lengthOfMonth());
-   	    return currentYearMonth;
+   	   
+	
 	
 
     }   
