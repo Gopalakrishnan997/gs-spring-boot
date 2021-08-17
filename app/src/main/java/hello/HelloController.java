@@ -12,13 +12,8 @@ public class HelloController {
     public int index() {
          
     	 YearMonth currentYearMonth = YearMonth.now();
-    	    System.out.printf("Days in month year %s: No of days: %s \n",
-    	        currentYearMonth, currentYearMonth.lengthOfMonth());
-    	    YearMonth creditCardExpiry = YearMonth.of(2078, Month.FEBRUARY);
-    	    System.out.printf("Your credit card expires on %s: No of days: %s \n",
-    	        creditCardExpiry, creditCardExpiry.lengthOfMonth());
+    	  
 
-
-        return currentYearMonth.lengthOfMonth();
+        return currentYearMonth;
     }   
 }
