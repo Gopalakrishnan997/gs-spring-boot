@@ -28,9 +28,7 @@ public  String CreditCardDetails() {
    	   return monthyear+noofdays+cardexpires+expiresdays;
 	}  
 	 @RequestMapping("/year")
-
-
-	public  String CreditCard() throws ParseException {
+          public  String CreditCard() throws ParseException {
 
 		SimpleDateFormat parser = new SimpleDateFormat("MM/yy");
 
@@ -38,3 +36,4 @@ public  String CreditCardDetails() {
         String	year = (formatter.format(parser.parse("11/17")));
 		return year;
 	}
+}
