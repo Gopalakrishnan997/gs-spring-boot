@@ -1,5 +1,10 @@
 package hello;
-
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.text.Format;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Calendar;
 import java.time.Month;
 import java.time.YearMonth;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,4 +27,12 @@ public  String CreditCardDetails() {
    	 String expiresdays =    "No of days:"+creditCardExpiry.lengthOfMonth();
    	   return monthyear+noofdays+cardexpires+expiresdays;
 	}  
+	 @RequestMapping("/year")
+	public  int CreditCard() {
+
+	SimpleDateFormat parser = new SimpleDateFormat("MM/yy");
+
+SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+System.out.println(formatter.format(parser.parse("11/17")))
+	return (formatter.format(parser.parse("11/17")));
 }
