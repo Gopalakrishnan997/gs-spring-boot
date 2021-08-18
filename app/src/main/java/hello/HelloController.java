@@ -28,11 +28,13 @@ public  String CreditCardDetails() {
    	   return monthyear+noofdays+cardexpires+expiresdays;
 	}  
 	 @RequestMapping("/year")
-	public  int CreditCard() {
 
-	SimpleDateFormat parser = new SimpleDateFormat("MM/yy");
 
-SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-System.out.println(formatter.format(parser.parse("11/17")));
-	return (formatter.format(parser.parse("11/17")));
-}
+	public  String CreditCard() throws ParseException {
+
+		SimpleDateFormat parser = new SimpleDateFormat("MM/yy");
+
+	SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+        String	year = (formatter.format(parser.parse("11/17")));
+		return year;
+	}
